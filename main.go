@@ -2,40 +2,9 @@ package main
 
 import (
 	"fmt"
+	"book"
 )
 
-//Book struct tutorial
-
-type dimensions struct {
-	height int
-	width  int
-	depth  int
-}
-
-// Book is a thingy whatsitwhat is a book?
-type Book struct {
-	title        string
-	author       string
-	startingpage int
-	endingpage   int
-	dimensions   dimensions
-	booktype     bool // is it an ebook, yes
-	colour       string
-	bookLocation bookLocation
-}
-
-type bookLocation struct {
-
-	// isbn
-	// deweyDecimalNumber
-	// onShelf - should be a boolean
-	// available via ereader true or false
-}
-
-func (b Book) Read() int {
-	pagesRead := b.endingpage - b.startingpage
-	return pagesRead
-}
 
 func (b Book) Volume() int {
 	vol := b.dimensions.depth * b.dimensions.height * b.dimensions.depth
@@ -45,7 +14,7 @@ func (b Book) Volume() int {
 
 func main() {
 
-	janeEyre := Book{
+	newBook := Book{
 		title:  "Jane Eyre",
 		author: "Charlotte Bronte",
 		dimensions: dimensions{
@@ -59,12 +28,10 @@ func main() {
 		colour:       "Penguin orange classic style",
 	}
 
-	volumeJane := janeEyre.Volume
-	fmt.Println(volumeJane)
-	fmt.Println(janeEyre.Volume)
+	volumeBook := newBook.Volume
+	fmt.Println("the book volume is":, volumeBook)
 
-	pagesRead := janeEyre.Read()
-	fmt.Println(pagesRead)
+	pagesRead := newBook.Read()
 
 	if pagesRead > 0 {
 		fmt.Println("Hurrah, you have read this many pages:", pagesRead)
