@@ -41,7 +41,3 @@ func main() {
 	}
 }
 
-func (b Book) Locate() string {
-
-	return "this is where your return will go"
-}
