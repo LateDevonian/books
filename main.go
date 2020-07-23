@@ -2,15 +2,10 @@ package main
 
 import (
 	"fmt"
-	"book"
+	"books"
 )
 
 
-func (b Book) Volume() int {
-	vol := b.dimensions.depth * b.dimensions.height * b.dimensions.depth
-	return vol
-
-}
 
 func main() {
 

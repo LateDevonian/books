@@ -2,10 +2,10 @@ package books
 
 // Dimensions holds the physical volume of a book
 type Dimensions struct {
-	Height   int
-	Width    int
-	Depth    int
-	Filesize int
+	height   int
+	width    int
+	depth    int
+	filesize int
 }
 
 // Book is a thingy whatsitwhat is a book?

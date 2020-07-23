@@ -13,9 +13,9 @@ func TestRead(t *testing.T) {
 		Title:  "Jane Eyre",
 		Author: "Charlotte Bronte",
 		Dimensions: Dimensions{
-			Height: 34,
-			Width:  44,
-			Depth:  1,
+			height: 34,
+			width:  44,
+			depth:  1,
 		},
 		Booktype:     false,
 		startingpage: 1,
@@ -29,4 +29,21 @@ func TestRead(t *testing.T) {
 
 	assert.Equal(t, expectedPages, pagesRead, "the correct number of pates are read")
 
+}
+
+func TestVolume(t *testing.T) {
+
+	janeEyre := Book{
+		Dimensions: Dimensions{
+			height: 2,
+			width:  3,
+			depth:  4,
+		},
+	}
+
+	returnedVolume := janeEyre.Volume()
+	expectedVolume := 24
+	fmt.Println(returnedVolume)
+
+	assert.Equal(t, expectedVolume, returnedVolume, "the book volume is calculated")
 }
