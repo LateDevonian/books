@@ -8,6 +8,7 @@ import (
 
 
 func main() {
+	//Describes a book in detail as an example of using golang
 
 	newBook := Book{
 		title:  "Jane Eyre",
