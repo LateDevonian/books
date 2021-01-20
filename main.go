@@ -2,10 +2,7 @@ package main
 
 import (
 	"fmt"
-	"books"
 )
-
-
 
 func main() {
 	//Describes a book in detail as an example of using golang
@@ -25,7 +22,7 @@ func main() {
 	}
 
 	volumeBook := newBook.Volume
-	fmt.Println("the book volume is":, volumeBook)
+	fmt.Println("the book volume is", volumeBook)
 
 	pagesRead := newBook.Read()
 
@@ -36,4 +33,3 @@ func main() {
 		fmt.Println(err)
 	}
 }
-

@@ -1,4 +1,4 @@
-package books
+package actions
 
 func (b Book) Read() int {
 	pagesRead := b.endingpage - b.startingpage

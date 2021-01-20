@@ -1,4 +1,4 @@
-package books
+package actions
 
 // Dimensions holds the physical volume of a book
 type Dimensions struct {
@@ -25,4 +25,8 @@ type bookLocation struct {
 	// deweyDecimalNumber
 	// onShelf - should be a boolean
 	// available via ereader true or false
+}
+
+type Colours struct {
+	//
 }

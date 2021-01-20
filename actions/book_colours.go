@@ -1,4 +1,4 @@
-package books
+package actions
 
 import (
 	"encoding/json"
@@ -11,7 +11,7 @@ type CatlogColors struct {
 }
 
 type Catlog struct {
-	Colors string `json: "colors"`
+	//Colors string `json: "colors"`
 }
 
 func open_colors() {
