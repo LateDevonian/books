@@ -11,7 +11,7 @@ type CatlogColors struct {
 }
 
 type Catlog struct {
-	//Colors string `json: "colors"`
+	Colors string
 }
 
 func open_colors() {

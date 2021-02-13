@@ -1,19 +1,19 @@
-package actions
+package definitions
 
 // Dimensions holds the physical volume of a book
 type Dimensions struct {
-	height   int
-	width    int
-	depth    int
-	filesize int
+	Height   int
+	Width    int
+	Depth    int
+	Filesize int
 }
 
 // Book is a thingy whatsitwhat is a book?
 type Book struct {
 	Title        string
 	Author       string
-	startingpage int
-	endingpage   int
+	Startingpage int
+	Endingpage   int
 	Dimensions   Dimensions
 	Booktype     bool // is it an ebook, yes.
 	Colour       string
@@ -28,5 +28,17 @@ type bookLocation struct {
 }
 
 type Colours struct {
-	//
+	// colours string `json:"colours"`
+	// [
+	//   {
+	//     colour string `json:"colour"`
+	//     category string `json:"category"`
+	//     colortype string `json:"type"`
+	// 	code string `json:"code"`
+	// 		{
+	//       	rgba []int `json:"rgba"`
+	//       	hex string `json:"hex"`
+	// 		}
+	// 	}
+	// ]
 }

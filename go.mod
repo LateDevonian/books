@@ -1,4 +1,4 @@
-module books
+module github.com/LateDevonian/books
 
 go 1.15
 
